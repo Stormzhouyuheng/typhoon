@@ -1,0 +1,437 @@
+{
+  "mapServiceUrl": "http://10.7.1.129:8086",
+  "mapDefaultDiscribe": "地图默认配置",
+  "mapDefault": {
+    "defaultBaseLayer": "矢量",
+    "defaultZoom": 14,
+    "defaultCenter": [22.8, 108.46]
+  },
+  "layersDiscribe": "可控制显示的底图",
+  "layers": [
+    {
+      "url": "/geoserver/cite/wms",
+      "wfsUrl": "/geoserver/cite/wfs",
+      "type": "WMS",
+      "layerType": "polygon",
+      "format": "image/png",
+      "layerName": "cite:nnqx",
+      "name": "南宁市区县",
+      "show": false
+    },
+    {
+      "url": "/geoserver/cite/wms",
+      "wfsUrl": "/geoserver/cite/wfs",
+      "type": "WMS",
+      "layerType": "polygon",
+      "format": "image/png",
+      "layerName": "cite:yj-polygon",
+      "name": "邕江",
+      "show": false
+    },
+    {
+      "url": "/geoserver/cite/wms",
+      "wfsUrl": "/geoserver/cite/wfs",
+      "type": "WMS",
+      "layerType": "polyline",
+      "format": "image/png",
+      "layerName": "cite:test-area",
+      "name": "测试地块",
+      "mantleType": "dike",
+      "show": true
+    },
+    {
+      "url": "/geoserver/cite/wms",
+      "wfsUrl": "/geoserver/cite/wfs",
+      "type": "WMS",
+      "layerType": "polyline",
+      "format": "image/png",
+      "layerName": "cite:npj-polyline",
+      "name": "那平江",
+      "show": true
+    },
+    {
+      "url": "/geoserver/cite/wms",
+      "wfsUrl": "/geoserver/cite/wfs",
+      "type": "WMS",
+      "layerType": "polyline",
+      "format": "image/png",
+      "layerName": "cite:flooddike-polyline",
+      "name": "堤防",
+      "mantleType": "dike",
+      "show": true
+    },
+    {
+      "type": "VELOCITY",
+      "fileName": "2021010700.json",
+      "name": "风场",
+      "show": false
+    },
+    {
+      "type": "HEATLAYER",
+      "fileName": "heatmaptest.geojson",
+      "name": "热力图",
+      "show": false
+    }
+  ],
+  "ghtLayersDiscribe": "概化图可控制底图",
+  "ghtLayers": [
+    {
+      "url": "/geoserver/cite/wms",
+      "type": "WMS",
+      "layerType": "polyline",
+      "format": "image/png",
+      "layerName": "cite:npj-polyline",
+      "name": "那平江",
+      "show": true
+    },
+    {
+      "url": "/geoserver/cite/wms",
+      "type": "WMS",
+      "layerType": "polyline",
+      "format": "image/png",
+      "layerName": "cite:flooddike-polyline",
+      "name": "堤防",
+      "mantleType": "dike",
+      "show": true
+    }
+  ],
+  "ghtOperareLayerDiscribe": "概化图站点增删改查图层服务",
+  "ghtOperareLayer": {
+    "url": "/geoserver/cite/wfs",
+    "layerType": "point",
+    "layerNameSpace": "cite",
+    "layerName": "ght-point",
+    "name": "概化图点图层"
+  },
+  "testLayers": [
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:rain-point",
+      "iconUrl": "../static/img/yl.png",
+      "iconSize": [48, 50],
+      "mantleType": "rain",
+      "name": "雨量站"
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:river-point",
+      "iconUrl": "../static/img/sw.png",
+      "iconSize": [48, 50],
+      "name": "水位站",
+      "mantleType": "river",
+      "show": true
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:reservoir-point",
+      "iconUrl": "../static/img/sk.png",
+      "iconSize": [48, 50],
+      "name": "水库站",
+      "mantleType": "reservoir",
+      "show": true
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:bengzhan-point",
+      "iconUrl": "../static/img/bz.png",
+      "iconSize": [48, 50],
+      "mantleType": "pump_station",
+      "name": "泵站",
+      "showTip": false,
+      "show": true
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:pailaozha-point",
+      "iconUrl": "../static/img/sz.png",
+      "iconSize": [48, 50],
+      "mantleType": "sluice",
+      "name": "排涝闸"
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:secure-point",
+      "iconUrl": "../static/img/aq.png",
+      "iconSize": [48, 50],
+      "mantleType": "safe",
+      "name": "安全监测"
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:camera-point",
+      "iconUrl": "../static/img/sp.png",
+      "iconSize": [40, 42],
+      "mantleType": "video",
+      "name": "实时视频"
+    }
+  ],
+  "waterLayers": [
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:river-point",
+      "iconUrl": "../static/img/sw.png",
+      "iconSize": [48, 50],
+      "name": "水位站",
+      "mantleType": "river",
+      "showTip": true,
+      "show": true
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:reservoir-point",
+      "iconUrl": "../static/img/sk.png",
+      "iconSize": [48, 50],
+      "name": "水库站",
+      "mantleType": "reservoir",
+      "showTip": true,
+      "show": true
+    }
+  ],
+  "rainLayerDescribe": "雨量站地图",
+  "rainLayer": [
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:rain-point",
+      "iconUrl": "../static/img/yl.png",
+      "iconSize": [48, 50],
+      "name": "雨量站",
+      "mantleType": "rain",
+      "showTip": true,
+      "show": true,
+      "legendChilds": [
+        {
+          "label": "rain-level-0",
+          "src": "../static/img/rain-level-0.jpg"
+        },
+        {
+          "label": "rain-level-1",
+          "src": "../static/img/rain-level-1.jpg"
+        },
+        {
+          "label": "rain-level-2",
+          "src": "../static/img/rain-level-2.jpg"
+        },
+        {
+          "label": "rain-level-3",
+          "src": "../static/img/rain-level-3.jpg"
+        },
+        {
+          "label": "rain-level-4",
+          "src": "../static/img/rain-level-4.jpg"
+        },
+        {
+          "label": "rain-level-5",
+          "src": "../static/img/rain-level-5.jpg"
+        },
+        {
+          "label": "rain-level-6",
+          "src": "../static/img/rain-level-6.jpg"
+        },
+        {
+          "label": "rain-level-7",
+          "src": "../static/img/rain-level-7.jpg"
+        },
+        {
+          "label": "rain-level-8",
+          "src": "../static/img/rain-level-8.jpg"
+        }
+      ]
+    }
+  ],
+  "videoLayerDescribe": "实时视频地图",
+  "videoLayer": [
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:camera-point",
+      "iconUrl": "../static/img/sp.png",
+      "iconSize": [40, 42],
+      "mantleType": "video",
+      "name": "实时视频",
+      "show": true
+    }
+  ],
+  "securityLayer": [
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:secure-point",
+      "iconUrl": "../static/img/aq.png",
+      "iconSize": [48, 50],
+      "mantleType": "safe",
+      "name": "安全监测",
+      "show": true
+    }
+  ],
+  "engineeringLayers": [
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:bengzhan-point",
+      "iconUrl": "../static/img/bz.png",
+      "iconSize": [48, 50],
+      "mantleType": "pump_station",
+      "name": "泵站",
+      "showTip": true,
+      "show": true
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:pailaozha-point",
+      "iconUrl": "../static/img/sz.png",
+      "iconSize": [48, 50],
+      "mantleType": "sluice",
+      "name": "排涝闸",
+      "showTip": true,
+      "show": true
+    }
+  ],
+  "xxfwLayers": [
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:river-point",
+      "iconUrl": "../static/img/sw.png",
+      "iconSize": [48, 50],
+      "name": "水位站",
+      "mantleType": "river",
+      "show": true
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:reservoir-point",
+      "iconUrl": "../static/img/sk.png",
+      "iconSize": [48, 50],
+      "name": "水库站",
+      "mantleType": "reservoir",
+      "show": true
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:rain-point",
+      "iconUrl": "../static/img/yl.png",
+      "iconSize": [48, 50],
+      "mantleType": "rain",
+      "name": "雨量站"
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:bengzhan-point",
+      "iconUrl": "../static/img/bz.png",
+      "iconSize": [48, 50],
+      "mantleType": "pump_station",
+      "name": "泵站",
+      "showTip": false,
+      "show": true
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:pailaozha-point",
+      "iconUrl": "../static/img/sz.png",
+      "iconSize": [48, 50],
+      "mantleType": "sluice",
+      "name": "排涝闸"
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:secure-point",
+      "iconUrl": "../static/img/aq.png",
+      "iconSize": [48, 50],
+      "mantleType": "safe",
+      "name": "安全监测"
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:camera-point",
+      "iconUrl": "../static/img/sp.png",
+      "iconSize": [40, 42],
+      "mantleType": "video",
+      "name": "实时视频"
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "type": "geoJson",
+      "layerType": "polyline",
+      "layerName": "cite:section-polyline",
+      "iconUrl": "../static/img/bd.png",
+      "iconSize": [48, 50],
+      "mantleType": "section",
+      "name": "养护标段",
+      "lineStyle": {
+        "color": "#3388ff",
+        "weight": 8,
+        "opacity": 1
+      }
+    },
+    {
+      "url": "/geoserver/cite/ows",
+      "legendUrl": "/geoserver/cite/wms",
+      "type": "geoJson",
+      "layerType": "point",
+      "layerName": "cite:group-point",
+      "iconUrl": "../static/img/dw.png",
+      "iconSize": [48, 50],
+      "mantleType": "m-group",
+      "name": "养护队伍"
+    }
+  ]
+}

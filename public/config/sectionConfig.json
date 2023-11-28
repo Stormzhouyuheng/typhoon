@@ -1,0 +1,169 @@
+{
+  "describe": {
+    "label": "名称",
+    "value": "断面文件名",
+    "sensor": ["传感器在图片中横向像素位置"],
+    "wettinglineDesign": {
+      "waterIntersection": "设计浸润线与坡面交点高程",
+      "sensorIntersection": ["设计浸润线与传感器交点高程"]
+    },
+    "levels": {
+      "design": "设计最高水位",
+      "normal": "平时水位"
+    },
+    "yMin": "图片底部高程",
+    "yMax": "图片顶部高程"
+  },
+  "sections": [
+    {
+      "label": "K0+000",
+      "value": "K0+000",
+      "id": 20,
+      "sensor": [380],
+      "wettinglineDesign": {
+        "waterIntersection": 76.14,
+        "sensorIntersection": [76.76]
+      },
+      "levels": {
+        "design": 77.38
+      },
+      "yMin": 45.56,
+      "yMax": 84
+    },
+    {
+      "label": "K0+300",
+      "value": "K0+300",
+      "id": 20,
+      "sensor": [309],
+      "wettinglineDesign": {
+        "waterIntersection": 74,
+        "sensorIntersection": [75.98]
+      },
+      "levels": {
+        "design": 77.37
+      },
+      "yMin": 52.93,
+      "yMax": 84
+    },
+    {
+      "label": "K0+600",
+      "value": "K0+600",
+      "id": 20,
+      "sensor": [310],
+      "wettinglineDesign": {
+        "waterIntersection": 69.5,
+        "sensorIntersection": [71.75]
+      },
+      "levels": {
+        "design": 77.35
+      },
+      "yMin": 51.4,
+      "yMax": 84
+    },
+    {
+      "label": "K0+950",
+      "value": "K0+950",
+      "id": 20,
+      "sensor": [429],
+      "wettinglineDesign": {
+        "waterIntersection": 68.7,
+        "sensorIntersection": [70.03]
+      },
+      "levels": {
+        "design": 77.32
+      },
+      "yMin": 53.52,
+      "yMax": 84
+    },
+    {
+      "label": "K1+300",
+      "value": "K1+300",
+      "id": 20,
+      "sensor": [327],
+      "wettinglineDesign": {
+        "waterIntersection": 69.5,
+        "sensorIntersection": [70.6]
+      },
+      "levels": {
+        "design": 77.31
+      },
+      "yMin": 49.63,
+      "yMax": 80
+    },
+    {
+      "label": "K1+450",
+      "value": "K1+450",
+      "id": 20,
+      "sensor": [280],
+      "wettinglineDesign": {
+        "waterIntersection": 71,
+        "sensorIntersection": [71.8]
+      },
+      "levels": {
+        "design": 77.3
+      },
+      "yMin": 50.28,
+      "yMax": 80
+    },
+    {
+      "label": "K1+607.852",
+      "value": "K1+607.852",
+      "id": 20,
+      "sensor": [406],
+      "wettinglineDesign": {
+        "waterIntersection": 69.8,
+        "sensorIntersection": [73.6]
+      },
+      "levels": {
+        "design": 77.3
+      },
+      "yMin": 52.8,
+      "yMax": 80
+    },
+    {
+      "label": "K1+950",
+      "value": "K1+950",
+      "id": 20,
+      "sensor": [448],
+      "wettinglineDesign": {
+        "waterIntersection": 77.27,
+        "sensorIntersection": [77.1]
+      },
+      "levels": {
+        "design": 77.27
+      },
+      "yMin": 45.56,
+      "yMax": 84
+    },
+    {
+      "label": "K2+150",
+      "value": "K2+150",
+      "id": 20,
+      "sensor": [359],
+      "wettinglineDesign": {
+        "waterIntersection": 77,
+        "sensorIntersection": [77]
+      },
+      "levels": {
+        "design": 77.27
+      },
+      "yMin": 56,
+      "yMax": 84
+    },
+    {
+      "label": "K2+275",
+      "value": "K2+275",
+      "id": 20,
+      "sensor": [380],
+      "wettinglineDesign": {
+        "waterIntersection": 68.7,
+        "sensorIntersection": [71.9]
+      },
+      "levels": {
+        "design": 77.25
+      },
+      "yMin": 52.72,
+      "yMax": 84
+    }
+  ]
+}

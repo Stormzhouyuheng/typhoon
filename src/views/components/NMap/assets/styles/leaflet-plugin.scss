@@ -1,0 +1,104 @@
+
+/*******************************************typhoon start********************************************************/
+.animate-typhoon-wrapper {
+  background: transparent;
+  border: 0;
+  z-index: 200 !important;
+}
+
+.animate-typhoon {
+  animation: spin 1.4s linear 0.1s infinite;
+  transform-origin: 50%;
+  filter: drop-shadow(0 0 3px #fff);
+  color: inherit;
+}
+
+.warning-line-tip-wrapper {
+  background-color: initial;
+  border: none;
+  font-size: 14px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-1turn);
+  }
+}
+/*******************************************typhoon end********************************************************/
+
+
+/****************************************popup style start**************************************************/
+.leaflet-popup-content {
+  .content-wrap {
+    display: flex;
+    flex-direction: column;
+    > div {
+      display: inline-flex;
+      margin-bottom: 4px;
+      position:relative;
+     // border-bottom: 1px dashed #ccc;
+      &:after{
+        position:absolute;
+        bottom:-2px;
+        left:0;
+        height:1px;
+        width:100%;
+        background: linear-gradient(
+            90deg,
+            rgba(0, 153, 255, 0) 0%,
+            rgba(0, 153, 255, .8) 35%,
+            rgba(26, 202, 239, .8) 75%,
+            rgba(26, 202, 239, 0) 100%
+        );
+        content:" ";
+      }
+      span {
+        margin-left: 10px;
+      }
+    }
+    .title {
+      font-weight: bold;
+      margin: -13px -19px 15px;
+      padding: 10px;
+      width: calc(100% + 38px);
+      border-radius:10px 10px 0 0;
+      color:#fff;
+      background: -webkit-linear-gradient(
+          1deg,
+          rgba(0, 153, 255, 1) 0%,
+          rgba(0, 153, 255, 1) 0%,
+          #1acaef 100%,
+          #1acaef 100%
+      );
+      background: -moz-linear-gradient(
+          89deg,
+          rgba(0, 153, 255, 1) 0%,
+          rgba(0, 153, 255, 1) 0%,
+          #1acaef 100%,
+          #1acaef 100%
+      );
+      background: linear-gradient(
+          89deg,
+          rgba(0, 153, 255, 1) 0%,
+          rgba(0, 153, 255, 1) 0%,
+          #1acaef 100%,
+          #1acaef 100%
+      );
+    }
+    .label {
+      width: 60px;
+      color:#888;
+      text-align-last: justify;
+      text-align: justify;
+      text-justify: distribute-all-lines;
+    }
+  }
+}
+.leaflet-popup-tip-container{
+  margin-top:-1px;
+}
+/****************************************popup style end**************************************************/

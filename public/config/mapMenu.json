@@ -1,0 +1,186 @@
+{
+  "mapMenuList": [
+    {
+      "name": "riverWater",
+      "title": "河道水情",
+      "icon": "shuiqing",
+      "path": "riverWater",
+      "component": "river_water/index",
+      "customLayer": "waterLayers",
+      "listItem":[{
+        "name": "allRiver",
+        "title":"全部河道站"
+      },{
+        "name": "warnRiver",
+        "title":"告警河道站"
+      }],
+      "rolePermi": ""
+    },
+    {
+      "name": "rainInfo",
+      "title": "雨情信息",
+      "icon": "yuqing",
+      "path": "rainInfo",
+      "component": "rain_info/index",
+      "rolePermi": "",
+      "customLayer": "rainLayer",
+      "listItem":[{
+        "name": "nowRain",
+        "title":"实时降雨"
+      },{
+        "name": "timeRain",
+        "title":"时段降雨"
+      },{
+        "name": "queryRain",
+        "title":"雨量查询"
+      }
+      ]
+    },
+    {
+      "name": "reservoirWater",
+      "title": "水库水情",
+      "icon": "gongqing",
+      "path": "reservoirWater",
+      "component": "reservoir_water/index",
+      "rolePermi": "",
+      "customLayer": "engineeringLayers",
+      "listItem":[{
+        "name": "allReservoir",
+        "title":"重要水库站"
+      },{
+        "name": "warnReservoir",
+        "title":"超警水库站"
+      }]
+    },
+    {
+      "name": "saltyInfo",
+      "title": "咸情信息",
+      "icon": "xqxx",
+      "component": "salty_info/index",
+      "rolePermi": "",
+      "customLayer": "securityLayer",
+      "listItem":[{
+        "name": "allSalty",
+        "title":"全部咸情站"
+      },{
+        "name": "warnSalty",
+        "title":"超警咸情站"
+      }]
+    },
+    {
+      "name": "tideInfo",
+      "title": "潮位信息",
+      "icon": "cwxx",
+      "component": "tide_info/index",
+      "rolePermi": "",
+      "listItem":[{
+        "name": "allTide",
+        "title":"全部潮位站"
+      },{
+        "name": "warnTide",
+        "title":"超警潮位站"
+      }]
+    },
+    {
+      "name": "ForecastInfo",
+      "title": "预报信息",
+      "icon": "ybxx",
+      "path": "windInfo",
+      "component": "forecast_info/index",
+      "rolePermi": "",
+      "listItem":[{
+        "name": "forecastQuery",
+        "title":"预报查询"
+      }]
+    },
+    {
+      "name": "typhoonInfo",
+      "title": "台风路径",
+      "icon": "taifeng",
+      "component": "typhoon_info/index",
+      "path": "videoInfo",
+      "rolePermi": "",
+      "customLayer": "videoLayer",
+      "listItem":[{
+        "name": "typhoonPath",
+        "title":"台风路径"
+      },{
+        "name": "typhoonAnalyze",
+        "title":"台风分析"
+      }]
+    }
+  ],
+  "detailComp": [
+    {
+      "name": "reservoir",
+      "title": "水库站详情",
+      "component": "reservoir_detail/index",
+      "layerNo":1
+    },
+    {
+      "name": "river",
+      "title": "水位站详情",
+      "component": "river_detail/index",
+      "layerNo":0
+    },
+    {
+      "name": "rain",
+      "title": "雨量站详情",
+      "component": "rain_detail/index",
+      "layerNo":0
+    },
+    {
+      "name": "sluice",
+      "title": "水闸详情",
+      "component": "sluice_detail/index",
+      "layerNo":1
+    },
+    {
+      "name": "dike",
+      "title": "堤防详情",
+      "component": "dike_detail/index",
+      "layerNo":0
+    },
+    {
+      "name": "pump_station",
+      "title": "泵站详情",
+      "component": "pump_detail/index",
+      "layerNo":0
+    },
+    {
+      "name": "video",
+      "title": "视频详情",
+      "component": "videoDetail/index",
+      "layerNo":0
+    },
+    {
+      "name": "wind",
+      "title": "风情详情",
+      "component": "reservoir_detail/index"
+    },
+    {
+      "name": "dry",
+      "title": "旱情详情",
+      "component": "reservoir_detail/index",
+      "layerNo":0
+    },
+    {
+      "name": "safe",
+      "title": "安全监测详情",
+      "component": "security_detail/index",
+      "layerNo":0
+    },
+    {
+      "name": "section",
+      "title": "养护标段详情",
+      "component": "maintenance_section_detail/index",
+      "layerNo":0
+    },
+    {
+      "name": "m-group",
+      "title": "养护小组详情",
+      "component": "maintenance_group_detail/index",
+      "layerNo":0
+    }
+  ]
+}
